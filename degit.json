@@ -1,6 +1,6 @@
 [
   {
     "action": "remove",
-    "files": ["LICENSE", "package-lock.json"]
+    "files": ["README.md", "LICENSE", "package-lock.json"]
   }
 ]
