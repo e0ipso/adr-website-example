@@ -1,0 +1,14 @@
+services:
+  apache:
+    image: tugboatqa/httpd:2.4
+    default: true
+    commands:
+      init:
+        - curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+        - ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/public" "${DOCROOT}"
+        - apt-get install -y nodejs
+      build:
+        - npm install
+        - npm run-script telemetry:off
+        - rm --recursive --force "${TUGBOAT_ROOT}/public"
+        - npm run-script build
