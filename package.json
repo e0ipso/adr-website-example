@@ -7,6 +7,11 @@
   "dependencies": {
     "@lullabot/gatsby-theme-adr": "^1.2.1",
     "gatsby": "^4.4.0",
+    "gatsby-plugin-feed": "^4.13.0",
+    "gatsby-plugin-image": "^2.13.0",
+    "gatsby-plugin-mdx": "^3.13.0",
+    "gatsby-plugin-sitemap": "^5.13.0",
+    "gatsby-remark-autolink-headers": "^5.13.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
